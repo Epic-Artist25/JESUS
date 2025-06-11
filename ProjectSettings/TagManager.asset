@@ -8,6 +8,7 @@ TagManager:
   - PlayerFire
   - tela
   - Enemy
+  - BoundaryDown
   layers:
   - Default
   - TransparentFX
