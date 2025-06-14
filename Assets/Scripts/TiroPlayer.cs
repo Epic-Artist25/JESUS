@@ -2,13 +2,19 @@ using UnityEngine;
 
 public class TiroPlayer : MonoBehaviour
 {
-    // tem que criar no player um empty obj pra o tiro não colidir com o player, também to fazendo esse tirosa serem filhos de uma "tela" mas ela pode ser só um gameobj vazio
+    // tem que criar no player um empty obj pra o tiro nï¿½o colidir com o player, tambï¿½m to fazendo esse tirosa serem filhos de uma "tela" mas ela pode ser sï¿½ um gameobj vazio
 
+    AudioController AudioControl;
     public GameObject Tiro;
     public GameObject ShootPoint;
     public GameObject tela;
     public int speed;
     public Rigidbody rb;
+
+    void Start()
+    {
+        AudioControl = GameObject.FindGameObjectWithTag("MainCamera").gameObject.GetComponent<AudioController>();
+    }
 
     void Update()
     {
@@ -17,6 +23,7 @@ public class TiroPlayer : MonoBehaviour
             // tiro
             tela = GameObject.FindGameObjectWithTag("tela");
             Instantiate(Tiro, ShootPoint.transform.position, Quaternion.identity, tela.transform);
+            AudioControl.PlayAudio(0);
         }
     }
 }
