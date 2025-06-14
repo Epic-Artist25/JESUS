@@ -2127,6 +2127,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2252140949037907995, guid: 46ad82c8633df074b979b73f812a6c01, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8624631182120150256}
+    - targetCorrespondingSourceObject: {fileID: 2252140949037907995, guid: 46ad82c8633df074b979b73f812a6c01, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8624631182120150263}
   m_SourcePrefab: {fileID: 100100000, guid: 46ad82c8633df074b979b73f812a6c01, type: 3}
 --- !u!4 &8624631182120150255 stripped
 Transform:
@@ -2151,6 +2154,21 @@ MonoBehaviour:
   mixer: {fileID: 24100000, guid: a85983b057f35e24a8e887b6d3409dc9, type: 2}
   effSl: {fileID: 0}
   audioSl: {fileID: 0}
+--- !u!114 &8624631182120150263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433806732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2faa6670c4bf01745b1659978dd099df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pausePanel: {fileID: 287968922}
+  currentScoreText: {fileID: 0}
+  highScoreText: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
