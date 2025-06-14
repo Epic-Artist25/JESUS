@@ -9,7 +9,7 @@ public class CausarDano : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        if (other.gameObject.tag == "BoundaryDown")
+        if (other.gameObject.tag == "BoundaryDown" || other.gameObject.tag == "Barreira")
         {
             Destroy(this.gameObject);
         }

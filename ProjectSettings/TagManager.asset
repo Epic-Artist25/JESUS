@@ -10,6 +10,7 @@ TagManager:
   - Enemy
   - BoundaryDown
   - EnemyFire
+  - Barreira
   layers:
   - Default
   - TransparentFX

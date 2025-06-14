@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2738390768021100921}
   m_Layer: 0
   m_Name: Barreira
-  m_TagString: Untagged
+  m_TagString: Barreira
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ae6c3bb3aaca0b43ab67ede9e0dee84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 3
+  vida: 20
 --- !u!65 &4752833099961298608
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -118,11 +118,11 @@ BoxCollider:
     m_Bits: 0
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 1
+  m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.12460643, y: 0.044457894, z: 0.051551156}
-  m_Center: {x: 0.0006052225, y: -0.018626021, z: -0.0027628639}
+  m_Size: {x: 0.12460642, y: 0.6591236, z: 0.051551156}
+  m_Center: {x: 0.0006052196, y: -0.07856344, z: -0.0027628636}
 --- !u!54 &2738390768021100921
 Rigidbody:
   m_ObjectHideFlags: 0
