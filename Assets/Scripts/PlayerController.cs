@@ -1,9 +1,10 @@
 using UnityEngine;
 using UnityEngine.InputSystem.XR;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-    ControladorDeVida hp;
+    public int hp = 3;
     public Rigidbody rb;
     public int speed;
     void Start()
@@ -14,29 +15,24 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
             rb.AddForce(Vector3.left * speed);
         }
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
             rb.AddForce(Vector3.right * speed);
         }
     }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "EnemyFire" || collision.gameObject.tag == "Enemy")
-        {
-            ControladorDeVida.instacia.HpTotal(-1);
-        }
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "EnemyFire" || other.gameObject.tag == "Enemy")
         {
-            ControladorDeVida.instacia.HpTotal(-1);
+            hp--;
+            if(hp == 0)
+            {
+                SceneManager.LoadScene("LoseScreen");
+            }
         }
     }
 }

@@ -35,12 +35,12 @@ public class AudioManager : MonoBehaviour
     }
     public void SetMasterVolume()
     {
-        mixer.SetFloat("master", Mathf.Log10(masterSlider.value) * 20);
+        mixer.SetFloat("Master", Mathf.Log10(masterSlider.value) * 20);
         PlayerPrefs.SetFloat("masterVolume", masterSlider.value);
     }
     public void SetMusicVolume()
     {
-        mixer.SetFloat("music", Mathf.Log10(musicSlider.value) * 20);
+        mixer.SetFloat("Musica", Mathf.Log10(musicSlider.value) * 20);
         PlayerPrefs.SetFloat("musicVolume", musicSlider.value);
     }
 
