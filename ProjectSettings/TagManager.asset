@@ -9,6 +9,7 @@ TagManager:
   - tela
   - Enemy
   - BoundaryDown
+  - EnemyFire
   layers:
   - Default
   - TransparentFX

@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 7339666960287593607}
   m_Layer: 0
   m_Name: Jato
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104,7 +104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 320c327fa57663a40a011bf3607e9ab6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
+  rb: {fileID: 3167228955142783508}
   speed: 8000
 --- !u!114 &348801192870725751
 MonoBehaviour:
@@ -122,7 +122,7 @@ MonoBehaviour:
   ShootPoint: {fileID: 6500649735127085247}
   tela: {fileID: 6500649735127085247}
   speed: 8000
-  rb: {fileID: 0}
+  rb: {fileID: 3167228955142783508}
 --- !u!54 &3167228955142783508
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -169,8 +169,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.31243137, y: 0.20664065, z: 0.0533359}
-  m_Center: {x: 0.0012077919, y: -0.002302135, z: 0.0133454725}
+  m_Size: {x: 0.32616055, y: 0.21927181, z: 0.37518173}
+  m_Center: {x: 0.0020316597, y: -0.0020275523, z: 0.008956237}
 --- !u!1 &6500649735127085247
 GameObject:
   m_ObjectHideFlags: 0
