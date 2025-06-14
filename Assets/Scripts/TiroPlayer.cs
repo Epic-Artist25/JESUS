@@ -23,7 +23,6 @@ public class TiroPlayer : MonoBehaviour
             // tiro
             tela = GameObject.FindGameObjectWithTag("tela");
             Instantiate(Tiro, ShootPoint.transform.position, Quaternion.identity, tela.transform);
-            AudioControl.PlayAudio(0);
         }
     }
 }
