@@ -1,13 +1,13 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class backToMenu: MonoBehaviour
+public class BackToMenu : MonoBehaviour
 {
-
-    [SerializeField] private GameObject Canvas;
-
-    public void Exit()
+    public void Update()
     {
-        SceneManager.LoadScene("Menu");
+        if (Input.GetKey(KeyCode.Z))
+        {
+            SceneManager.LoadScene("Menu");
+        }
     }
 }
