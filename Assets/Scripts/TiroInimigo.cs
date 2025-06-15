@@ -4,7 +4,6 @@ public class tiroInimigo : MonoBehaviour
 {
     public GameObject TiroInimigo;
     public GameObject Inimigo;
-    public GameObject tela;
     public float segundos = 2f;
 
     void Start()
